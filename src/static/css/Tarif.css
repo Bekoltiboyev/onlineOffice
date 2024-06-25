@@ -1,0 +1,86 @@
+.tarif{
+    position: relative;
+    top: 70px;
+}
+
+.tarif_left{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 9px 2px rgba(0, 0, 0,0.1);
+    border-radius: 10px;
+    padding: 25px 0px;
+}
+.tarif_right{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 9px 2px rgba(0, 0, 0,0.1);
+    border-radius: 10px;
+    padding: 25px 0;
+}
+
+.tarif_icon_left_one{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgb(246,206,0);
+    background: linear-gradient(259deg, rgba(246,206,0,1) 31%, rgba(170,136,0,0.86) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 9px 2px rgba(0, 0, 0, 0.1);
+}
+.tarif_icon_left_circle{
+    color: white;
+    font-size: 5rem;
+}
+.tarif_icon_right_two{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgb(0,50,196);
+    background: linear-gradient(259deg, rgba(0,50,196,1) 31%, rgba(9,4,102,0.86) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 9px 2px rgba(0, 0, 0, 0.1);
+}
+.tarif_icon_right_circle{
+    color: white;
+    font-size: 5rem;
+}
+
+.tarif_btn{
+    width: 80%;
+    border: none;
+    height: auto;
+    border-radius: 30px;
+    background-color: rgb(22, 209, 22);
+    color: #FFFFFF;
+    font-family: var(--fontOpenSans);
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px 8px;
+}
+
+.aylanma_title{
+    font-size: 2.4rem;
+    color: rgb(246,206,0);
+}
+.aylanma_text{
+    font-size: 1.2rem;
+    color: black;
+    font-family: var(--fontOpenSans);
+    opacity: .8;
+}
+.foyda_title{
+    font-size: 2.4rem;
+    color: blue;
+}

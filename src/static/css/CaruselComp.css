@@ -1,0 +1,21 @@
+/* carusel */
+.m_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    margin: 0 15px;
+}
+.item_videos iframe{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 8px 22px 0px rgba(173,173,173,1);
+    -moz-box-shadow: 1px 8px 22px 0px rgba(173,173,173,1);
+    box-shadow: 1px 8px 22px 0px rgba(173,173,173,1);
+    border: none;
+}
+.rec-carousel-wrapper button  {
+    border: 2px solid green;
+}

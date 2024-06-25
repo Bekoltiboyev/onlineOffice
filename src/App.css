@@ -1,36 +1,41 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
 *{
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0 ;
     box-sizing: border-box !important;
     text-decoration: none !important;
     list-style-type: none !important;
 }
 :root{
-    -fontRoboto: 'Roboto Mono', monospace;
-    -fontOpenSans: 'Open Sans', sans-serif;
+    --fontRoboto: 'Roboto Mono', monospace;
+    --fontOpenSans: 'Open Sans', sans-serif;
+    --fontMonsarat: 'Montserrat', sans-serif
 }
 body{
     background-color: #FFFFFF;
 }
 
 .title{
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 76px;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 72px;
     letter-spacing: 0.02em;
     color: #2D2D2D;
-    margin-bottom: 80px;
-    font-family: var(-fontRoboto);
+    margin-bottom: 10px;
+    font-family: var(--fontMonsarat);
 }
 
 .text{
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 32px;
     font-weight: 400;
     letter-spacing: 0.02em;
-    max-width: 70%;
     color: #2D2D2D;
-    font-family: var(-fontRoboto);
+    font-family: var(--fontMonsarat);
+    text-transform: lowercase;
+    opacity: .8;
 }
+
+
+
