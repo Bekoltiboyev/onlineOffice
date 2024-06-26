@@ -19,6 +19,7 @@ function Home() {
             <Xizmatlar/>
             <Tarif/>
             <Footer />
+            
         </>
     );
 }
