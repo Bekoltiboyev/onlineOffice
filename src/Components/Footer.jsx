@@ -8,7 +8,7 @@ function Footer() {
     const { t } = useTranslation();
     return (
         <>
-            <div className="container-fluid py-5 footer">
+            <div className="container-fluid py-5 footer" id='footer'>
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-4">
@@ -25,9 +25,9 @@ function Footer() {
                         </div>
                         <div className="col-12 col-md-4">
                             <div className="footer-contact">
-                                <p><a href="#">+998930067799</a></p>
-                                <p><a href="#">mahbubazopirqulovna@gmail.com</a></p>
-                                <p><a href="#">{t('Чилонзор тумани, Чилонзор кўчаси, 4 уй')}</a></p>
+                                <p><a  href="tel:+998930067799">+998930067799</a></p>
+                                <p><a rel="noopener noreferrer" target='_blank' href="mailto:mahbubazopirqulovna@gmail.com">mahbubazopirqulovna@gmail.com</a></p>
+                                <p><a rel="noopener noreferrer" target='_blank' href="https://www.google.com/maps/place/Uchtepa+Sabes/@41.2811647,69.1799159,16.58z/data=!4m6!3m5!1s0x38ae894d53306d79:0x9458bbcb7e1179eb!8m2!3d41.2809885!4d69.1805471!16s%2Fg%2F11t0lwnrx0?entry=ttu">{t('Чилонзор тумани, Чилонзор кўчаси, 4 уй')}</a></p>
                             </div>
                         </div>
                     </div>
@@ -36,8 +36,8 @@ function Footer() {
                         <div className="col-12">
                             <div className="footer-footer">
                                 <p className='text-center footer-footer-text mb-0 mt-3'>
-                                    Copyright <span style={{fontSize: "22px"}}>&copy;</span> 2024 OnlineOffice.uz <br />
-                               {t('Ўзбекистон бўйлаб қулай бухгалтерия хизматлари.')}
+                                    Copyright <span style={{fontSize: "22px"}}>&copy;</span> 2024 hisobchilar.com.uz <br />
+                                    {t('Ўзбекистон бўйлаб қулай бухгалтерия хизматлари.')}
                                 </p>
                             </div>
                         </div>

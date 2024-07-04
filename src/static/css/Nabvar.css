@@ -57,62 +57,26 @@ nav ul li a:hover{
 #check {
   display: none;
 }
+.lang_btn{
+  border: none;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0 8px;
+  font-size: 18px;
+  color: white;
+  font-family: var(--fontRoboto);
+  font-weight: 600;
+  box-shadow: 3px 3px 9px 2px rgba(0, 0, 0,0.1);
+}
+.rus_btn{
+  background: rgb(47,149,255);
+  background: linear-gradient(230deg, rgba(47,149,255,1) 23%, rgba(0,232,38,1) 57%, rgba(255,255,255,0.86) 92%);
+}
+.uzb_btn{
+  background: rgb(205,1,26);
+  background: linear-gradient(230deg, rgba(205,1,26,1) 21%, rgba(47,149,255,1) 51%, rgba(255,255,255,0.86) 85%);
+}
 
-.lang{
-  display: flex;
-  width: 120px;
-  height: 100%;
-  align-items: center;
-  border-radius: 16px;
-  background-color: green;
-  border: 1px solid green;
-  justify-content: space-between;
-}
-.uz{
-  display: flex;
-  column-gap: 5px;
-  width: 50%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
-  border-right: 2px solid white;
-  cursor: pointer;
-}
-.uz:hover{
-  background-color: rgb(22, 209, 22);
-}
-.ru{
-  display: flex;
-  column-gap: 5px;
-  width: 50%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  cursor: pointer;
-}
-.ru:hover{
-  background-color: rgb(22, 209, 22);
-}
-.lang .uz p{
-  color: white;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 0.2rem;
-  font-family: var(--fontOpenSans);
-  font-weight: 600;
-}
-.lang .ru p{
-  color: white;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 0.2rem;
-  font-family: var(--fontOpenSans);
-  font-weight: 600;
-}
 @media (max-width: 992px) {
   .checkbtn {
     display: block;

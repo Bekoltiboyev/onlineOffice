@@ -9,19 +9,35 @@ import { MdImportExport } from "react-icons/md";
 import { IoStar, IoStarHalf  } from "react-icons/io5";
 import { FaSignal } from "react-icons/fa6";
 import { useTranslation } from 'react-i18next'; 
-
+import {motion} from 'framer-motion'
+import { fadeIn } from '../Variant';
 
 function Xizmatlar() {
     const { t } = useTranslation();
     return (
         
         <>
-            <div className="container xizmatlar py-3">
-                <h1 className="title">{t('Сизни доимий такрорланадиган ишлардан ҳалос этамиз.')}</h1>
-                <p className="text">{t('Биз нафақат солиқларни ҳисоблаймиз ва ҳисоботларни топширамиз, балки корхона учун ундан ҳам муҳим бўлган вазифаларни бажарамиз.')}</p>
+            <div className="container xizmatlar py-3" id='xizmatlar'>
+                <motion.h1 
+                    variants={fadeIn('up', 0.1)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className="title">{t('Сизни доимий такрорланадиган ишлардан ҳалос этамиз.')}</motion.h1>
+                <motion.p 
+                    variants={fadeIn('up', 0.1)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className="text">{t('Биз нафақат солиқларни ҳисоблаймиз ва ҳисоботларни топширамиз, балки корхона учун ундан ҳам муҳим бўлган вазифаларни бажарамиз.')}</motion.p>
                 <div className="row g-3 mt-5">
                     <div className="col-12 col-xl-6">
-                        <div className="x_card">
+                        <motion.div 
+                            variants={fadeIn('up', 0.1)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="x_card">
                             <div className="x_card_header">
                                 <PiHandshakeLight className='x_card_icon' />
                                 <h2 className='x_card_title'>{t('Шартномалар тайёрлаймиз.')}</h2>
@@ -40,10 +56,15 @@ function Xizmatlar() {
                                     <FaSignal className='fs-5' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="col-12 col-xl-6">
-                        <div className="x_card">
+                        <motion.div 
+                            variants={fadeIn('up', 0.1)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="x_card">
                             <div className="x_card_header">
                                 <SiInternetcomputer className='x_card_icon' />
                                 <h2 className='x_card_title'>{t('Интернет – банкинг юритамиз.')}</h2>
@@ -62,10 +83,15 @@ function Xizmatlar() {
                                     <FaSignal className='fs-5' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="col-12 col-xl-6">
-                        <div className="x_card">
+                        <motion.div 
+                            variants={fadeIn('up', 0.1)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="x_card">
                             <div className="x_card_header">
                                 <MdOutlineAssuredWorkload className='x_card_icon' />
                                 <h2 className='x_card_title'>{t('Ходимларни ишга ёллаймиз ва ишдан бўшатамиз.')}</h2>
@@ -84,10 +110,15 @@ function Xizmatlar() {
                                     <FaSignal className='fs-5' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="col-12 col-xl-6">
-                        <div className="x_card">
+                        <motion.div 
+                            variants={fadeIn('up', 0.1)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="x_card">
                             <div className="x_card_header">
                                 <CiMoneyCheck1 className='x_card_icon' />
                                 <h2 className='x_card_title'>{t('Ходимларга иш ҳақи ҳисоблаймиз.')}</h2>
@@ -106,10 +137,15 @@ function Xizmatlar() {
                                     <FaSignal className='fs-5' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="col-12 col-xl-6">
-                        <div className="x_card">
+                        <motion.div 
+                            variants={fadeIn('up', 0.1)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="x_card">
                             <div className="x_card_header">
                                 <IoDocumentAttachOutline  className='x_card_icon' />
                                 <h2 className='x_card_title'>{t('Электрон хужжатлар айланиш тизимини юритамиз.')}</h2>
@@ -128,10 +164,15 @@ function Xizmatlar() {
                                     <FaSignal className='fs-5' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="col-12 col-xl-6">
-                        <div className="x_card">
+                        <motion.div 
+                            variants={fadeIn('up', 0.1)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="x_card">
                             <div className="x_card_header">
                                 <MdImportExport  className='x_card_icon' />
                                 <h2 className='x_card_title'>{t('Экспорт ва импорт амалга оширишда ёрдам берамиз')}</h2>
@@ -150,7 +191,7 @@ function Xizmatlar() {
                                     <FaSignal className='fs-5' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
